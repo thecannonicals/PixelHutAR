@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #000000;
+  /* Pure black background for the whole webpage */
+  color: #ecf0f1;
+}
+
+.hero {
+  position: relative;
+  background: url('testpic.jpg') center/cover;
+  /* Replace 'testpic.jpg' with your image */
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin-left: 20px;
+  /* Adjust as needed */
+}
+
+.button {
+  border-radius: 8px;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #ffffff;
+  text-decoration: none;
+  margin: 10px 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #2980b9;
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+  color: #ecf0f1;
+  /* Text color for the hero section */
+}
+
+.tagline {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.lore {
+  font-size: 1.2em;
+  line-height: 1.5;
+}
+
+.key-feature {
+  padding: 50px;
+  background-color: #34495e;
+  color: #ecf0f1;
+  margin-bottom: 20px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s, transform 1s;
+}
+
+.key-feature.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+h2 {
+  font-size: 2em;
+  color: #bdc3c7;
+  /* Heading color for key features */
+  margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+.key-feature:nth-child(odd) {
+  text-align: left;
+}
+
+.key-feature:nth-child(even) {
+  text-align: right;
+}
